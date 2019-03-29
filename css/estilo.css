@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(https://fonts.gstatic.com/s/raleway/v11/8KhZd3VQBtXTAznvKjw-k73hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #c4dadf;
+}
+
+#container {
+    margin: 50px auto;
+    width: 450px;
+}
+
+#my_canvas {
+    background-color: white;
+}
+
+#btn_play {
+    border: none;
+    width: 376px;
+    height: 233px;
+    background: url(img/btn-play.png);
+    margin: 250 40;
+    position: fixed;
+}

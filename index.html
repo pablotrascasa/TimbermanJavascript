@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Pablo Trascasa">
+    <title>Timberman JS</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <script src="js/background.js"></script>
+    <script src="js/Box2D.js"></script>
+    <script src="js/facebook.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/physics_aux.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/tree.js"></script>
+
+</head>
+
+<body onload="Init();">
+    <div id="container">
+        
+        <button id="btn_play" style="background: url(img/btn-play.png)" onclick="startFunction()"></button>
+        <canvas id="my_canvas" width="450" height="800" allow="autoplay"></canvas>
+    </div>
+
+    <!-- Al pulsar el botón lo eliminamos para que no moleste -->
+    <!-- Cambia la variable controladora selected a true para que inicie el juego en game -->
+    <script>function startFunction() {  
+            selected = true;
+            var elem = document.getElementById('btn_play');
+            elem.parentNode.removeChild(elem);
+          }
+        </script>
+</body>
+
+</html>
